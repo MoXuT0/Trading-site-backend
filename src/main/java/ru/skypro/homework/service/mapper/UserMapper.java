@@ -5,9 +5,11 @@ import ru.skypro.homework.dto.UserDto;
 import ru.skypro.homework.entity.User;
 
 public interface UserMapper {
-    UserDto mapToUserDto(User user);
+    UserDto mapUserToUserDto(User user);
 
-    User mapToUser(UserDto userDto);
+    User mapUserDtoToUser(UserDto userDto);
 
-    User mapToUser(RegisterReqDto registerReqDto);
+    User mapRegToUser(RegisterReqDto registerReqDto);
+
+    User mapRegToUser (RegisterReqDto registerReqDto);
 }
